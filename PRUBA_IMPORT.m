@@ -1,0 +1,6 @@
+fileID = fopen('data.txt');
+formatSpec = '%s %s %d %d %s %s';
+C = textscan(fileID,formatSpec,...            
+                'Delimiter', ',', ...
+                'CollectOutput', true);
+celldisp(C);
